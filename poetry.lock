@@ -2745,14 +2745,14 @@ viz = ["pygraphviz"]
 
 [[package]]
 name = "oaklib"
-version = "0.1.71"
+version = "0.1.72"
 description = "Ontology Access Kit: Python library for common ontology operations over a variety of backends"
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0.0"
 files = [
-    {file = "oaklib-0.1.71-py3-none-any.whl", hash = "sha256:c3de9aa2b84e02e595891b7881c5b5bdec690c266ec26bcbdc495cfd11224630"},
-    {file = "oaklib-0.1.71.tar.gz", hash = "sha256:f21cca949682bab8b5282a6f9fa16cb6cd1409ec25b2ad560903dbb0edc51717"},
+    {file = "oaklib-0.1.72-py3-none-any.whl", hash = "sha256:c3537bac36aaebccd1eab9f327c646ff7ef72a7444558a027e9977cfc5a75407"},
+    {file = "oaklib-0.1.72.tar.gz", hash = "sha256:ad4d1d49bec94005a1e6ed6aeca7b54acb365237ac353ac2f5ae3b8d6675538a"},
 ]
 
 [package.dependencies]
@@ -5076,4 +5076,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "3a8a3cea9b7c1e9210b69bc1a62f719e9519241302ad739e7abe62780197dca0"
+content-hash = "cd18a7688318bb64e602621e38184ab1d79de375d989f8e8368b00bd5a52dc2f"

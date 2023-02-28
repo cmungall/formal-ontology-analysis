@@ -13,7 +13,7 @@ pandas = "^1.5.3"
 seaborn = "^0.12.2"
 SQLAlchemy = "^1.4.32, !=1.4.46"
 greenlet = "!=2.0.2"
-oaklib = "^0.1.71"
+oaklib = "^0.1.72"
 
 [build-system]
 requires = ["poetry-core"]

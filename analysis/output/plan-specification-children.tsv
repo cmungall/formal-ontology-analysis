@@ -1,0 +1,21 @@
+subject	subject_label	predicate	predicate_label	object	object_label
+IAO:0000010	software	rdfs:subClassOf	None	IAO:0000104	plan specification
+IAO:0000025	programming language	rdfs:subClassOf	None	IAO:0000104	plan specification
+IAO:0000064	algorithm	rdfs:subClassOf	None	IAO:0000104	plan specification
+IAO:0000647	Postal delivery route	rdfs:subClassOf	None	IAO:0000104	plan specification
+OBI:0000272	protocol	rdfs:subClassOf	None	IAO:0000104	plan specification
+OBI:0001636	grant	BFO:0000050	part of	OBI:0500000	study design
+OBI:0001636	grant	rdfs:subClassOf	None	IAO:0000104	plan specification
+OBI:0001882	target material in specimen specification	BFO:0000050	part of	OBI:0500000	study design
+OBI:0001882	target material in specimen specification	rdfs:subClassOf	None	IAO:0000104	plan specification
+OBI:0001884	specimen-based scope of investigation specification	BFO:0000050	part of	OBI:0500000	study design
+OBI:0001884	specimen-based scope of investigation specification	rdfs:subClassOf	None	IAO:0000104	plan specification
+OBI:0001896	investigation assay specification	BFO:0000050	part of	OBI:0500000	study design
+OBI:0001896	investigation assay specification	IAO:0000136	is about	OBI:0000070	assay
+OBI:0001896	investigation assay specification	rdfs:subClassOf	None	IAO:0000104	plan specification
+OBI:0001899	target capture specification	BFO:0000050	part of	OBI:0500000	study design
+OBI:0001899	target capture specification	rdfs:subClassOf	None	IAO:0000104	plan specification
+OBI:0001943	software pipeline	rdfs:subClassOf	None	IAO:0000104	plan specification
+OBI:0001961	PCR program	rdfs:subClassOf	None	IAO:0000104	plan specification
+OBI:0500000	study design	BFO:0000051	has part	OBI:0000272	protocol
+OBI:0500000	study design	rdfs:subClassOf	None	IAO:0000104	plan specification
