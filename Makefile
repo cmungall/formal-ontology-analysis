@@ -12,5 +12,11 @@ metadata/bfo-labels.tsv:
 metadata/ogms-labels.tsv:
 	runoak -i sqlite:obo:ogms labels i^OGMS: > $@
 
+results/ont-axiom-depths.tsv:
+	 ./scripts/measure-axiom-depth.pl db/*.owl > $@
+
+results/transitive-universals.tsv:
+	runoak -vv -i ontobee: query -q "SELECT DISTINCT ?g ?p ?o WHERE {GRAPH ?g {?r owl:onProperty ?p ; owl:allValuesFrom ?o . ?p rdf:type owl:TransitiveProperty . FILTER(\!strstarts(str(?o), 'http://purl.obolibrary.org/obo/BFO'))}} LIMIT 10000" --no-autolabel > $@
+
 results/q-%.tsv:
 	$(FIND) "runoak -i {} query -q 'SELECT '{}' as db, * FROM $*'" \; > $@
