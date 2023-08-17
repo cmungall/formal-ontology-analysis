@@ -1,3 +1,4 @@
+OBO = http://purl.obolibrary.org/obo
 #FIND = find db -name "*.db" -print0
 FIND = find db/ -name "*.db" -exec bash -c
 
@@ -20,3 +21,10 @@ results/transitive-universals.tsv:
 
 results/q-%.tsv:
 	$(FIND) "runoak -i {} query -q 'SELECT '{}' as db, * FROM $*'" \; > $@
+
+db:
+	ln -s ../semantic-sql/db
+
+all_historic: historic/obi-2009-11-02.owl
+historic/obi-%.owl:
+	wget $(OBO)/obi/$*/obi.owl -O $@
