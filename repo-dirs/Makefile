@@ -1,5 +1,9 @@
 current_dir = $(shell pwd)
 
+# First make a symlink to the repo:
+# e.g. go -> /Users/cjm/repos/go-ontology
+
+
 metadata/%-issues.json:
 	@(cd $* && gh issue list -s all -L 39999 --json "number,title,state") | grep -v ^/Users > $@
 .PRECIOUS: metadata/%-issues.json
